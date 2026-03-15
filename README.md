@@ -1,1 +1,1 @@
-# -HTML-CSS-JavaScript-projects-for-beginners
+# HTML-CSS-JavaScript-projects-for-beginners
