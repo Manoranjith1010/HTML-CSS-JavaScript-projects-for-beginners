@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Book App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Recipe Book App</h1>
+      <div class="search-bar">
+        <input
+          type="text"
+          id="search-input"
+          class="search-input"
+          placeholder="Search recipes..."
+          aria-label="Search recipes"
+        />
+      </div>
+    </header>
+
+    <div class="container">
+      <div id="loading" class="loading" aria-live="polite">
+        <div class="spinner"></div>
+        <p>Loading recipes...</p>
+      </div>
+      <div id="error-message" class="error-message" role="alert" hidden></div>
+      <ul id="recipe-list" class="recipe-list" aria-label="Recipe list"></ul>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
