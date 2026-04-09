@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">Weather App</h1>
+      <p class="subtitle">Search for a city to view its current weather details.</p>
+
+      <div class="search-box">
+        <input
+          id="city-input"
+          type="text"
+          placeholder="Enter city name"
+          class="input"
+        />
+        <button id="search-button" class="button">Search</button>
+      </div>
+
+      <div id="weather-card" class="weather-card hidden">
+        <h2 id="city-name"></h2>
+        <p id="weather-description" class="weather-description"></p>
+        <div class="weather-details">
+          <div>
+            <span class="label">Temperature</span>
+            <span id="temperature" class="value"></span>
+          </div>
+          <div>
+            <span class="label">Humidity</span>
+            <span id="humidity" class="value"></span>
+          </div>
+          <div>
+            <span class="label">Wind Speed</span>
+            <span id="wind-speed" class="value"></span>
+          </div>
+        </div>
+      </div>
+
+      <p id="message" class="message">Try London, New York, Tokyo, Sydney, Mumbai, or Paris.</p>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
